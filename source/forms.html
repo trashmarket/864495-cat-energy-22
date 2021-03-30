@@ -29,24 +29,91 @@
     </div>
   </header>
   <main class="page__main">
-    <section class="proram-feed">
-      <div class="proram-feed__wraper">
-        <h1 class="program-feed__title">
+    <form class="program-feed">
+      <div class="program-feed__wraper">
+      <fieldset class="program-feed__selection feed-selection">
+        <h1 class="feed-selection__title">
           Подбор программы
         </h1>
-        <p class="prorgam-feed__slogan">
+        <p class="feed-selection__slogan">
           Заполните анкету, и мы подберем
           программу питания для вашего кота
         </p>
-        <form class="program-feed__form form">
-          <fieldset class="form__set">
-            <label for="barsik" class="form__label">ИМЯ:*</label><input type="text" class="form__input" name="barsik" id="barsik">
-            <label for="mass-number" class="form__label">Вес (кг):*</label><input type="text" class="form__input" name="mass-number" id="mass-number">
-            <label for="age" class="form__label">Возраст (лет)</label><input type="text" class="form__input" name="mass-number" id="mass-number">
-          </fieldset>
-        </form>
+        <div class="feed-selection__object">
+          <label for="barsik" class="form__label">ИМЯ:*</label><input type="text" class="form__input form__input_text" name="barsik" id="barsik">
+          <label for="mass-number" class="form__label">Вес (кг):*</label><input type="text" class="form__input form__input_text" name="mass-number" id="mass-number">
+          <label for="age" class="form__label">Возраст (лет)</label><input type="text" class="form__input form__input_text" name="mass-number" id="mass-number">
+        </div>
+        <div class="feed-selection__selector">
+          <input type="radio" id="slim-feed" name="slim-feed" class="form__input form__input_check-box"><label for="slim-feed" class="form__label">похудение</label>
+          <input type="radio" id="mass-feed" name="mass-feed" class="form__input form__input_check-box"><label for="mass-feed" class="form__label">Набор массы</label>
+          <input type="radio" id="advice" name="advice" class="form__input form__input_check-box"><label for="advice" class="form__label">Не знаю (Нужен ваш совет)</label>
+        </div>
+      </fieldset>
+      <fieldset class="program-feed__contact data">
+        <h2 class="data__title">Контактные данные (владельца кота)</h2>
+          <div class="data__set">
+            <label for="email">E-mail:*</label><input type="text" id="email" name="email" class="data__input">
+            <label for="phone-number">Телефон:*</label><input type="text" id="phone-number" name="phone-number" class="data__input">
+          </div>
+      </fieldset>
+      <fieldset class="comments">
+        <h2 class="comments__title">Комментарий</h2>
+        <textarea class="comments__textarea" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <fieldset class="additionally">
+        <h2 class="additionally__title">Дополнительно</h2>
+        <ul class="additionally__list">
+          <li class="additionally__item">
+            <input type="checkbox" name="fake-sugar" id="fake-sugar" class="additionally__checkbox"><label for="fake-sugar">сахарозаменитель</label>
+          </li>
+          <li class="additionally__item">
+            <input type="checkbox" name="water" id="water" class="additionally__checkbox"><label for="water">питьевая вода</label>
+          </li>
+          <li class="additionally__item">
+            <input type="checkbox" name="milk" id="milk" class="additionally__checkbox"><label for="milk">молоко</label>
+          </li>
+          <li class="additionally__item">
+            <input type="checkbox" name="vitamin" id="vitamin" class="additionally__checkbox"><label for="vitamin">молоко</label>
+          </li>
+        </ul>
+        <input type="submit" class="additionally__submite" id="sub">
+        <span for="sub">
+          * — Обязательные поля
+        </span>
+      </fieldset>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <section class="map">
+      <h2 class="visually-hidden">как до нас добраться</h2>
+      <div class="map__info">
+        <h3 class="map__title">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </h3>
+        <p class="map__contact">
+          ул. Большая
+          Конюшенная, д. 19/8
+          <span class="map__contact-city">Санкт-Петербург</span>
+        </p>
       </div>
     </section>
-  </main>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo"></div>
+      <div class="page-footer__social-media">
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item social-list__item--vk"></li>
+          <li class="social-list__item social-listl__item--inst"></li>
+          <li class="social-list__item social-list__item--fc"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__logo academy-logo">
+      <span class="academy-logo__text">HTML Academy</span>
+    </div>
+  </footer>
 </body>
 </html>
