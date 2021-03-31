@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+<body class="page__body">
+  <header class="page-header__wrapper">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat's shop" width="33" height="37">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visully-hidden">Открыть меню</span>
+      </button>
+    </nav>
+    <div class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html"></a></li>
+        <li class="site-list__item">
+          <a href="catalog.html"></a></li>
+        <li class="site-list__item site-list__item--active">
+          <a href="#"></a></li>
+      </ul>
+      <div class="main-nav__list user-list">
+
+      </div>
+    </div>
+  </header>
+  <main class="page__main">
+    <form class="program-feed">
+      <div class="program-feed__wraper">
+      <fieldset class="program-feed__selection feed-selection">
+        <h1 class="feed-selection__title">
+          Подбор программы
+        </h1>
+        <p class="feed-selection__slogan">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+        <div class="feed-selection__object">
+          <label for="barsik" class="feed-selection__label">ИМЯ:*</label><input type="text" class="feed-selection__input form__input_text" name="barsik" id="barsik">
+          <label for="mass-number" class="feed-selection__label">Вес (кг):*</label><input type="text" class="feed-selection__input form__input_text" name="mass-number" id="mass-number">
+          <label for="age" class="feed-selection__label">Возраст (лет)</label><input type="text" class="feed-selection__input form__input_text" name="mass-number" id="mass-number">
+        </div>
+        <div class="feed-selection__selector">
+          <input type="radio" id="slim-feed" name="slim-feed" class="feed-selection__input feed-selection_check-box"><label for="slim-feed" class="form__label">похудение</label>
+          <input type="radio" id="mass-feed" name="mass-feed" class="feed-selection__input feed-selection_check-box"><label for="mass-feed" class="form__label">Набор массы</label>
+          <input type="radio" id="advice" name="advice" class="feed-selection__input feed-selection_check-box"><label for="advice" class="form__label">Не знаю (Нужен ваш совет)</label>
+        </div>
+      </fieldset>
+      <fieldset class="program-feed__contact data">
+        <h2 class="data__title">Контактные данные (владельца кота)</h2>
+          <div class="data__set">
+            <label for="email" class="data__label">E-mail:*</label><input type="text" id="email" name="email" class="data__input">
+            <label for="phone-number" class="data__label">Телефон:*</label><input type="text" id="phone-number" name="phone-number" class="data__input">
+          </div>
+      </fieldset>
+      <fieldset class="comments">
+        <h2 class="comments__title">Комментарий</h2>
+        <textarea class="comments__textarea" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <fieldset class="additionally">
+        <h2 class="additionally__title">Дополнительно</h2>
+        <ul class="additionally__list">
+          <li class="additionally__item">
+            <input type="checkbox" name="fake-sugar" id="fake-sugar" class="additionally__checkbox"><label for="fake-sugar" class="additionally__label">сахарозаменитель</label>
+          </li>
+          <li class="additionally__item">
+            <input type="checkbox" name="water" id="water" class="additionally__checkbox"><label for="water" class="additionally__label">питьевая вода</label>
+          </li>
+          <li class="additionally__item">
+            <input type="checkbox" name="milk" id="milk" class="additionally__checkbox"><label for="milk" class="additionally__label">молоко</label>
+          </li>
+          <li class="additionally__item">
+            <input type="checkbox" name="vitamin" id="vitamin" class="additionally__checkbox"><label for="vitamin" class="additionally__label">молоко</label>
+          </li>
+        </ul>
+        <input type="submit" class="additionally__submite" id="sub">
+        <span for="sub">
+          * — Обязательные поля
+        </span>
+      </fieldset>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <section class="map">
+      <h2 class="visually-hidden">как до нас добраться</h2>
+      <div class="map__info">
+        <h3 class="map__title">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </h3>
+        <p class="map__contact">
+          ул. Большая
+          Конюшенная, д. 19/8
+          <span class="map__contact-city">Санкт-Петербург</span>
+        </p>
+      </div>
+    </section>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo"></div>
+      <div class="page-footer__social-media">
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item social-list__item--vk"></li>
+          <li class="social-list__item social-list__item--inst"></li>
+          <li class="social-list__item social-list__item--fc"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__logo academy-logo">
+      <span class="academy-logo__text">HTML Academy</span>
+    </div>
+  </footer>
+</body>
+</html>
