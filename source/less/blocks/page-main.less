@@ -1,0 +1,51 @@
+.feed__wraper,
+.advatages__wraper,
+.technology__wrapper,
+.example__wrapper,
+.page-footer__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+}
+.feed__slogan {
+  .font-family(Oswald);
+  .font-size(20px; 20px);
+  text-transform: uppercase
+}
+.feed__button {
+  .font-family(Oswald);
+  .font-size(20px; 20px);
+}
+.advantages__item {
+  background-color: @color-grey;
+}
+.advantages__title {
+  text-transform: uppercase;
+}
+.advantages__button {
+  .font-family(Oswald);
+  .font-size(20px; 30px);
+  text-transform:uppercase;
+}
+.technology__icon{
+  background-color: @color-green;
+}
+.number(@n) when(@n > 0) {
+  .technology__item_@{n} {
+    background-image: url('../../img/numbers/@{n}.svg');
+  }
+  .number(@n - 1);
+}
+.number(4);
+.example__number {
+  .font-family(Oswald);
+  .font-size(30px; 37px);
+  text-transform: uppercase;
+}
+.example__number b {
+  .font-family(Arial);
+  .font-size(14px; 14px);
+}
+.example__price {
+  .font-family(Oswald);
+  .font-size(20px; 20px);
+}
