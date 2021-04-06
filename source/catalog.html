@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="page__body">
   <header class="page-header__wrapper">
@@ -30,25 +31,163 @@
   </header>
   <main class="page__main">
     <section class="shop">
-      <h1 class="shop__title">Каталог продукции</h1>
-      <ul class="shop__list">
-        <li class="shop__item"></li>
-        <li class="shop__item"></li>
-        <li class="shop__item"></li>
-        <li class="shop__item"></li>
-        <li class="shop__item"></li>
-        <li class="shop__item"></li>
-        <li class="shop__item"></li>
-        <li class="shop__item shop__item_active"></li>
-      </ul>
+      <div class="shop__wrapper">
+        <h1 class="shop__title">Каталог продукции</h1>
+        <ul class="shop__list">
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-orange.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy PRO<br>500 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>500 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Курица</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>700 Р.</span>
+              </li>
+            </ul>
+            <button class="shop-li__button">заказать</button>
+          </li>
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-orange.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy PRO<br>1000 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>1000 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Курица</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>1000 Р.</span>
+              </li>
+            </ul>
+            <button class="shop-li__button">заказать</button>
+          </li>
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-green.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy PRO<br>500 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>500 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Рыба</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>700 Р.</span>
+              </li>
+            </ul>
+            <button class="shop-li__button">заказать</button>
+          </li>
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-green.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy PRO<br>1000 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>1000 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Рыба</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>1000 Р.</span>
+              </li>
+            </ul>
+            <button class="shop-li__button">заказать</button>
+          </li>
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-blue.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy slim<br>500 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>500 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Гречка</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>400 Р.</span>
+              </li>
+            </ul>
+            <button class="shop-li__button">заказать</button>
+          </li>
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-blue.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy slim<br>1000 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>1000 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Гречка</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>700 Р.</span>
+              </li>
+            </ul>
+            <button class="shop-li__button">заказать</button>
+          </li>
+          <li class="shop__item shop-li">
+            <img src="img/basket/basket-purple.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+            <b class="shop-li__name">Cat Energy slim<br>500 г</b>
+            <ul class="shop-li__list">
+              <li class="shop-li__item">
+                Масса <span>500 г</span>
+              </li>
+              <li class="shop-li__item">
+                Вкус <span>Рис</span>
+              </li>
+              <li class="shop-li__item">
+                Цена <span>500 Р.</span>
+              </li>
+              <button class="shop-li__button">заказать</button>
+            </ul>
+          </li>
+          <li class="shop__item shop__item_active shop-li">
+            <b class="shop-li__name">Показать еще
+              100500 товаров</b>
+            <p class="shop-li__p">На самом деле вкусов
+                гораздо больше!
+            </p>
+            <button class="shop-li__button">показать все</button>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="additional-goods">
-      <ul class="additional-goods__list">
-        <li class="additional-goods__item"></li>
-        <li class="additional-goods__item"></li>
-        <li class="additional-goods__item"></li>
-        <li class="additional-goods__item"></li>
-      </ul>
+      <div class="additional-goods__wrapper">
+        <h3 class="additional-goods__title">Дополнительные товары</h3>
+        <ul class="additional-goods__list">
+          <li class="additional-goods__item goods-item">
+            <h4 class="goods-item__title">Сахарозаменитель</h4>
+            <p class="goods-item__p">1 упаковка (100 г) <span>200 Р.</span></p>
+            <button class="goods-item__button">заказать</button>
+          </li>
+          <li class="additional-goods__item goods-item">
+            <h4 class="goods-item__title">Сахарозаменитель</h4>
+            <p class="goods-item__p">1 упаковка (100 г) <span>200 Р.</span></p>
+            <button class="goods-item__button">заказать</button>
+          </li>
+          <li class="additional-goods__item goods-item">
+            <h4 class="goods-item__title">Сахарозаменитель</h4>
+            <p class="goods-item__p">1 упаковка (100 г) <span>200 Р.</span></p>
+            <button class="goods-item__button">заказать</button>
+          </li>
+          <li class="additional-goods__item goods-item">
+            <h4 class="goods-item__title">Сахарозаменитель</h4>
+            <p class="goods-item__p">1 упаковка (100 г) <span>200 Р.</span></p>
+            <button class="goods-item__button">заказать</button>
+          </li>
+        </ul>
+        <div class="additional-goods__arct">
+          Закажите все
+          и получите чехол для
+          кота в подарок!
+        </div>
+      </div>
     </section>
     <div class="additional-goods__all"></div>
   </main>
