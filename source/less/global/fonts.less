@@ -1,9 +1,20 @@
 @font-face {
-  font-family: Oswald;
-  src: url(../../fonts/oswaldmedium.woff),
-        url(../../fonts/oswaldregular.woff);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff"),
+    url("../fonts/oswaldmedium.woff2");
 }
-.font-family(@family; @font-style:normal; @font-weight:normal) {
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswaldregular.woff"),
+    url("../../fonts/oswaldregular.woff2");
+}
+
+.font-family (@family; @font-style:normal; @font-weight:normal) {
   font-family: @family;
   font-style: @font-style;
   font-weight: @font-weight;
@@ -12,19 +23,23 @@
   font-size: @fontSize;
   line-height: @lineHeight;
 }
+
 h1,
 h2,
 h3,
 h4 {
   .font-family(Oswald);
 }
+
 h1,
 h2 {
   .font-size(60px; 60px);
 }
+
 h3 {
   .font-size(36px; 36px);
 }
+
 p {
   .font-family(Arial);
   .font-size(16px; 24px);
