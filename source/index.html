@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
       <header class="page-header__wrapper">
@@ -10,18 +11,18 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat's shop" width="33" height="37">
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle visually-hidden" type="button">
             <span class="visully-hidden">Открыть меню</span>
           </button>
         </nav>
         <div class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html"></a></li>
+              <a href="index.html">главная</a></li>
             <li class="site-list__item">
-              <a href="catalog.html"></a></li>
+              <a href="catalog.html">Каталог продукции</a></li>
             <li class="site-list__item">
-              <a href="#"></a></li>
+              <a href="#">подбор программы</a></li>
           </ul>
           <div class="main-nav__list user-list">
 
@@ -80,7 +81,7 @@
           <div class="technology__wrapper">
             <h2 class="technology__title">Как это работает</h2>
             <ul class="technology__list">
-              <li class="technology__item">
+              <li class="technology__item technology__item_1">
                 <div class="technology__icon">
                   <img src="img/icons/icon_leaf.svg" alt="">
                 </div>
@@ -89,7 +90,7 @@
                   питательные вещества.
                 </p>
               </li>
-              <li class="technology__item">
+              <li class="technology__item technology__item_2">
                 <div class="technology__icon">
                   <img src="img/icons/icon_tub.svg" alt="">
                 </div>
@@ -99,7 +100,7 @@
                   кипятком и готово.
                 </p>
               </li>
-              <li class="technology__item">
+              <li class="technology__item technology__item_3">
                 <div class="technology__icon">
                   <img src="img/icons/icon_eat.svg" alt="">
                 </div>
@@ -109,7 +110,7 @@
                   функциональное питание.
                 </p>
               </li>
-              <li class="technology__item">
+              <li class="technology__item technology__item_4">
                 <div class="technology__icon">
                   <img src="img/icons/clock.svg" alt="">
                 </div>
@@ -123,66 +124,67 @@
           </div>
         </section>
         <section class="example">
-          <h2 class="example__title">
-            Живой пример
-          </h2>
-          <div class="example__info">
-            <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой
-              обычный корм на Cat Energy Slim. Отличный результат
-              без изнуряющих тренировок! При этом он не менял своих
-              привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <span class="example__number">
-              5 кг
-              <b>снижение веса</b>
-            </span>
-            <span class="example__number">
-              60 ДНЕЙ
-              <b>затрачено времени</b>
-            </span>
-            <p class="example__price">
-              Затраты на питание: 15 000 РУБ.
-            </p>
-          </div>
-          <div class="example__range">
-
-            <div class="example__range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+          <div class="example__wrapper">
+            <h2 class="example__title">
+              Живой пример
+            </h2>
+            <div class="example__info">
+              <p class="example__description">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой
+                обычный корм на Cat Energy Slim. Отличный результат
+                без изнуряющих тренировок! При этом он не менял своих
+                привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <span class="example__number">
+                5 кг
+                <b>снижение веса</b>
+              </span>
+              <span class="example__number">
+                60 ДНЕЙ
+                <b>затрачено времени</b>
+              </span>
+              <p class="example__price">
+                Затраты на питание: 15 000 РУБ.
+              </p>
+            </div>
+            <div class="example__range">
+              <div class="example__range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle"></div>
               </div>
-              <div class="toggle"></div>
             </div>
           </div>
         </section>
         <footer class="page-footer">
-          <section class="map">
-            <h2 class="visually-hidden">как до нас добраться</h2>
-            <div class="map__info">
-              <h3 class="map__title">
-                приглашаем
-                к сотрудничеству
-                дилеров!
-              </h3>
-              <p class="map__contact">
-                ул. Большая
-                Конюшенная, д. 19/8
-                <span class="map__contact-city">Санкт-Петербург</span>
-              </p>
-            </div>
-          </section>
           <div class="page-footer__wrapper">
-            <div class="page-footer__logo"></div>
-            <div class="page-footer__social-media">
-              <ul class="page-footer__list social-list">
-                <li class="social-list__item social-list__item--vk"></li>
-                <li class="social-list__item social-list__item--inst"></li>
-                <li class="social-list__item social-list__item--fc"></li>
-              </ul>
+            <section class="map">
+              <h2 class="visually-hidden">как до нас добраться</h2>
+              <div class="map__info">
+                <h3 class="map__title">
+                  приглашаем
+                  к сотрудничеству
+                  дилеров!
+                </h3>
+                <p class="map__contact">
+                  ул. Большая
+                  Конюшенная, д. 19/8
+                  <span class="map__contact-city">Санкт-Петербург</span>
+                </p>
+              </div>
+            </section>
+              <div class="page-footer__logo"></div>
+              <div class="page-footer__social-media">
+                <ul class="page-footer__list social-list">
+                  <li class="social-list__item social-list__item--vk"></li>
+                  <li class="social-list__item social-list__item--inst"></li>
+                  <li class="social-list__item social-list__item--fc"></li>
+                </ul>
+              </div>
+            <div class="page-footer__logo academy-logo">
+              <span class="academy-logo__text">HTML Academy</span>
             </div>
-          </div>
-          <div class="page-footer__logo academy-logo">
-            <span class="academy-logo__text">HTML Academy</span>
           </div>
         </footer>
       </main>
