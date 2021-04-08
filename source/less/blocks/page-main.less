@@ -5,8 +5,15 @@
 .program-feed__wraper,
 .shop__wrapper,
 .additional-goods__wrapper {
-  width: 1220px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .feed__slogan {
@@ -22,6 +29,36 @@
 
 .advantages__item {
   background-color: @color-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.advantages__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.technology__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.technology__item {
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    margin-bottom: 37px;
+  }
 }
 
 .advantages__title {
