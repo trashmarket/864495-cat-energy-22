@@ -7,12 +7,20 @@
 .shop-li__item {
   .font-family(Arial);
   .font-size(16px; 16px);
+  margin-bottom: 6px;
+
+  span {
+    margin-left: 180px;
+  }
 }
 
 .shop-li__button {
   .font-family(Oswald);
   .font-size(16px; 20px);
   text-transform: uppercase;
+  display: block;
+  width: 100%;
+  background-color: @color-green;
 }
 
 .goods-item__title {
@@ -22,14 +30,75 @@
 .goods-item__p {
   .font-family(Arial);
   .font-size(16px; 20px);
+
+  span {
+    margin-left: 65%;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+    }
+  }
 }
 
 .goods-item__button {
   .font-family(Oswald);
   .font-size(16px; 20px);
+  border: none;
+  width: 224px;
+  height: 40px;
+  background-color: @color-green;
 }
 
 .additional-goods__arct {
   .font-family(Arial);
   .font-size(16px; 20px);
+}
+
+.shop-li__list {
+  float: right;
+  margin-top: 60px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.shop-li_name {
+  margin-bottom: 18px;
+  .font-size(16px; 20px);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.shop__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 80px;
+  }
+}
+
+.shop__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.additional-goods__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.additional-goods__item {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
