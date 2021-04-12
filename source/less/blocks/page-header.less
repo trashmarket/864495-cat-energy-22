@@ -24,8 +24,8 @@
 }
 
 .page-header__menu-up {
-  height: 66px;
-  background-color: @color-green-rgba;
+
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     height: 100px;
@@ -38,9 +38,12 @@
   }
 }
 
-.site-list {
-  outline: 1px solid yellow;
+.main-nav {
+  position: relative;
+  margin-top: 11px;
+}
 
+.site-list {
   @media (min-width: @tablet-width) {
     width: 440px;
   }
@@ -51,6 +54,17 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: -54px;
+  width: 66px;
+  height: 54px;
+  display: block;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  background-color: @color-white;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -58,4 +72,58 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.main-nav--closed {
+  .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 23px;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 23px;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.site-list a {
+  position: relative;
+  display: block;
+  padding: 22px 122px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  border-top: 1px solid#E6E6E6;
+  text-align: center;
+}
+
+.page-header__logo-energy {
+  margin-bottom: 6px;
+  margin-left: 33%;
 }
