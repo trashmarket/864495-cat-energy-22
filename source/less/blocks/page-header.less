@@ -8,6 +8,12 @@
   z-index: -2;
 }
 
+.page-header {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 351px;
+  }
+}
+
 .page-header__wrapper {
   margin: 0 auto;
   display: flex;
@@ -48,6 +54,11 @@
   right: 0;
   left: 0;
   z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    align-items: center;
+  }
 }
 
 .main-nav--nojs {
@@ -57,10 +68,25 @@
 .site-list {
   @media (min-width: @tablet-width) {
     width: 440px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
   }
 
   @media (min-width: @desktop-width) {
     width: 749px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @color-green;
   }
 }
 
@@ -135,6 +161,13 @@
   background-color: white;
   border-top: 1px solid#E6E6E6;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    background-color: inherit;
+    padding: 0;
+    border: 0;
+  }
 }
 
 .page-header__logo-wrapper {
@@ -142,6 +175,10 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .page-header__logo {
@@ -154,12 +191,24 @@
   color: #ffffff;
   margin-top: 0;
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    .font-size(60px; 60px);
+    text-align: left;
+    width: 414px;
+    margin-left: 78px;
+  }
 }
 
 .page-header__containe-background-image {
   background-image: url("../img/cat_background_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .feed-slogan__p {
@@ -170,6 +219,13 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    .font-size(20px; 20px);
+    display: inline;
+    margin-left: 78px;
+  }
 }
 
 .feed-slogan__img {
@@ -177,26 +233,67 @@
   height: 270px;
   margin: 0 auto;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: relative;
+    bottom: 90px;
+    z-index: -1;
+  }
 }
 
 .feed-slogan__container {
   background-color: @color-green-rgba;
   height: 302px;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+  }
 }
 
 .feed-slogan__button {
-  display: flex;
+  display: block;
   background-color: @color-green;
   height: 40px;
-  width: 280px;
-  margin: 149px auto 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 149px 0 0;
   align-items: center;
   justify-content: center;
   .font-family(Oswald);
   .font-size(14px; 18px);
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .feed-slogan {
   height: 480px;
+}
+
+.feed-slogan__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.feed-slogan__button-container {
+  background-color: @color-green;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 244px;
+    height: 54px;
+    margin-left: 78px;
+    text-align: center;
+    padding-top: 14px;
+    .font-family(Oswald);
+    .font-size(20px; 20px);
+    text-transform: uppercase;
+    margin-top: 49px;
+  }
 }

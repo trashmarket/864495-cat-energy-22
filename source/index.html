@@ -35,19 +35,24 @@
           </div>
           <div class="page-header__feed feed-slogan">
             <div class="page-header__containe-background-image">
-            <div class="feed-slogan__container">
-                <h1 class="feed-slogan__title">Функциональное
-                  питание для котов
-                </h1>
-                <p class="feed-slogan__p">
-                  Занялся собой? Займись котом!
-                </p>
-                <img src="img/index-cat.png" alt="" width="552" height="499" class="feed-slogan__img">
+              <div class="feed-slogan__container">
+                  <h1 class="feed-slogan__title">Функциональное
+                    питание для котов
+                  </h1>
+                  <p class="feed-slogan__p">
+                    Занялся собой? Займись котом!
+                  </p>
+                  <a href="#" class="feed-slogan__button-container">
+                    подобрать программу
+                  </a>
+                  <img src="img/index-cat.png" alt="" width="552" height="499" class="feed-slogan__img">
+              </div>
             </div>
-          </div>
+          <div class="feed-slogan__wrapper">
             <a href="#" class="feed-slogan__button">
               подобрать программу
             </a>
+          </div>
           </div>
         </div>
       </header>
@@ -59,6 +64,7 @@
             </h2>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--slimming">
+                <img src="img/cat_lose_mass.svg" alt="cat" width="50" height="53" class="advantages__img">
                 <h3 class="advantages__title">похудение</h3>
                 <p class="advantages__description">
                   Ваш кот весит больше собаки и почти утратил способность
@@ -70,6 +76,7 @@
                 </p>
               </li>
               <li class="advantages__item advantages__item--mass">
+                <img src="img/cat_make_mass.svg" alt="cat" width="67" height="50" class="advantages__img">
                 <h3 class="advantages__title">набор массы</h3>
                 <p class="advantages__description">
                   Заработать авторитет среди дворовых котов и даже собак?
@@ -141,63 +148,73 @@
                 без изнуряющих тренировок! При этом он не менял своих
                 привычек и по-прежнему спит по 16 часов в день.
               </p>
-              <span class="example__number">
-                5 кг
-                <b>снижение веса</b>
-              </span>
-              <span class="example__number">
-                60 ДНЕЙ
-                <b>затрачено времени</b>
-              </span>
-              <p class="example__price">
-                Затраты на питание: 15 000 РУБ.
-              </p>
+              <div class="example__container">
+                <div class="example__container-span">
+                  <span class="example__number">
+                    5 кг
+                    <b>снижение веса</b>
+                  </span>
+                  <span class="example__number">
+                    60 ДНЕЙ
+                    <b>затрачено  времени</b>
+                  </span>
+                </div>
+                <p class="example__price">
+                  Затраты на питание: 15 000 РУБ.
+                </p>
+              </div>
+            </div>
+            <div class="example__images-cats">
+              <img src="img/mobile-big-cat.png" alt="cat-big" width="311" height="232">
             </div>
             <div class="example__range">
               <div class="example__range-controls">
+                <b class="left">было</b>
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
+                <b class="right">стало</b>
                 <div class="toggle"></div>
               </div>
             </div>
           </div>
         </section>
         <footer class="page-footer">
-          <div class="page-footer__wrapper">
             <section class="map">
               <h2 class="visually-hidden">как до нас добраться</h2>
               <div class="map__info">
                 <h3 class="map__title">
-                  приглашаем
-                  к сотрудничеству
+                  приглашаем <br>
+                  к сотрудничеству <br>
                   дилеров!
                 </h3>
                 <p class="map__contact">
-                  ул. Большая
-                  Конюшенная, д. 19/8
+                  ул. Большая <br>
+                  Конюшенная, д. 19/8 <br>
                   <span class="map__contact-city">Санкт-Петербург</span>
                 </p>
+                <img src="img/footer-point-map.svg" alt="point" width="57" height="53" class="map__pointer">
               </div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6606247046832!2d30.323450149120934!3d59.93777341157712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb858010f%3A0x5b56e33568a4029!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDIxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1617894943059!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
             </section>
-            <section class="page-footer__container">
-              <div class="page-footer__logo-energy"></div>
-              <div class="page-footer__social-media">
-                <ul class="page-footer__list social-list">
-                  <li class="social-list__item social-list__item--vk"></li>
-                  <li class="social-list__item social-list__item--inst"></li>
-                  <li class="social-list__item social-list__item--fc"></li>
-                </ul>
-              </div>
-              <div class="page-footer__logo academy-logo">
-                <span class="academy-logo__text">HTML Academy</span>
-                <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-                </svg>
-              </div>
-            </section>
-          </div>
+            <div class="page-footer__wrapper">
+              <section class="page-footer__container">
+                <div class="page-footer__logo-energy"></div>
+                <div class="page-footer__social-media">
+                  <ul class="page-footer__list social-list">
+                    <li class="social-list__item social-list__item--vk"></li>
+                    <li class="social-list__item social-list__item--inst"></li>
+                    <li class="social-list__item social-list__item--fc"></li>
+                  </ul>
+                </div>
+                <div class="page-footer__logo academy-logo">
+                  <span class="academy-logo__text">HTML Academy</span>
+                  <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+                  </svg>
+                </div>
+              </section>
+            </div>
         </footer>
       </main>
   </body>
@@ -219,5 +236,20 @@
         header_main.classList.add('main-nav--closed');
       }
     }
+
+    let cat_event = document.querySelector('.example__range');
+    let scale = document.querySelector('.scale');
+    let example__images_cats = document.querySelector('.example__images-cats img');
+
+    cat_event.addEventListener('click', function(event) {
+      if (event.target.closest('.right')) {
+        example__images_cats.src = "img/mobile-small-cat.png";
+        scale.style.justifyContent = 'flex-end';
+      }
+      if (event.target.closest('.left')) {
+        example__images_cats.src = "img/mobile-big-cat.png";
+        scale.style.justifyContent = 'flex-start';
+      }
+    });
   </script>
 </html>
