@@ -165,16 +165,18 @@
               </div>
             </div>
             <div class="example__images-cats">
-              <img src="img/mobile-big-cat.png" alt="cat-big" width="311" height="232">
+              <img src="img/mobile-big-cat.png" alt="cat-big" width="311" height="232" class="example__image-mobile">
+              <img src="img/half-fat-cat.png" alt="cat-big" width="311" height="232" class="example__image-tablet-desktop-1">
+              <img src="img/half-thin-cat.png" alt="cat-big" width="311" height="232" class="example__image-tablet-desktop-2">
             </div>
             <div class="example__range">
               <div class="example__range-controls">
                 <b class="left">было</b>
                 <div class="scale">
                   <div class="bar"></div>
+                  <div class="toggle"></div>
                 </div>
                 <b class="right">стало</b>
-                <div class="toggle"></div>
               </div>
             </div>
           </div>
@@ -250,6 +252,58 @@
         example__images_cats.src = "img/mobile-big-cat.png";
         scale.style.justifyContent = 'flex-start';
       }
+      document.removeEventListener('mousemove', pointerMove);
     });
+
+    /* range*/
+    let toggle = document.querySelector('.toggle');
+    let bar = document.querySelector('.bar');
+    cat_event.addEventListener("mousedown",  pointerDown);
+
+    function pointerDown(event) {
+      if (event.target.closest(".toggle")) {
+        event.preventDefault();
+        document.addEventListener('mousemove',  pointerMove);
+      }
+    }
+
+    function pointerMove(event) {
+      let splitTogle = event.clientX - toggle.offsetWidth / 2;
+      let leftPart = splitTogle - scale.getBoundingClientRect().left;
+      let leftRelativePart = leftPart / scale.offsetWidth;
+
+      if(leftRelativePart < 0) {
+        leftRelativePart = 0;
+      }
+
+      if(leftRelativePart > 1) {
+        leftRelativePart = 1;
+      }
+
+      let precent = leftRelativePart * 100;
+      toggle.style.left = `${precent}%`;
+      if (precent > 50){
+        let halfScale = scale.offsetWidth / 2
+        let leftRigtPart = splitTogle - (scale.getBoundingClientRect().left + halfScale );
+        let leftRightRelativePart = leftRigtPart / halfScale;
+          if(leftRightRelativePart < 0) {
+            leftRightRelativePart = 0;
+        }
+          if(leftRightRelativePart > 1) {
+            leftRightRelativePart = 1;
+        }
+        bar.style.width = `${leftRightRelativePart * 50}%`;
+        let rigrPosition = 50 - leftRightRelativePart * 50;
+        bar.style.right = `${rigrPosition}%`;
+      }
+      document.addEventListener('mouseup', pointerUp);
+    }
+
+    function pointerUp(event) {
+      console.log('up');
+      document.removeEventListener('mousemove', pointerMove);
+      document.removeEventListener('mouseup', pointerUp );
+    }
+
   </script>
 </html>
