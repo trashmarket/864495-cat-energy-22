@@ -14,7 +14,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1300px;
   }
 }
 
@@ -89,6 +89,16 @@
     flex-direction: column;
     padding: 70px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 105px;
+  }
+}
+
+.technology__item_4 {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .advantages__title {
@@ -100,6 +110,10 @@
   @media (min-width: @tablet-width) {
     margin: 0 0 23px;
     .font-size(36px; 36px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 73px 130px;
   }
 }
 
@@ -117,6 +131,14 @@
     border-top: none;
     .font-size(20px; 30px);
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+  }
+}
+
+.advantages__button:active {
+  opacity: 0.3;
 }
 
 .advantages__button::after {
@@ -128,6 +150,10 @@
     top: 57px;
     left: 124px;
     background-image: url("../img/arrow.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 32px;
   }
 }
 
@@ -174,6 +200,23 @@
     background-color: @color-grey;
     z-index: -1;
   }
+
+  @media (min-width: @tablet-width) {
+    top: 184px;
+  }
+}
+
+.example::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 32%;
+    height: auto;
+    top: 184px;
+    bottom: 0;
+    right: 0;
+    background-color: @color-cats-grey;
+  }
 }
 
 .example__number {
@@ -208,6 +251,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .example__number b {
@@ -222,6 +269,13 @@
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
     width: 142px;
+    margin-left: 11px;
+    justify-content: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-grey;
+    margin-left: 9px;
   }
 }
 
@@ -231,12 +285,30 @@
   margin-top: 26px;
   margin-bottom: 42px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .font-size(20px; 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+  }
+}
+
+.example__price span {
+  padding-right: 54px;
 }
 
 .example__images-cats {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -170px;
+  }
 }
 
 .advantages__description {
@@ -246,6 +318,10 @@
     margin: 0;
     width: 377px;
     .font-size(16px; 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 457px;
   }
 }
 
@@ -257,6 +333,14 @@
 
   @media (min-width: @tablet-width) {
     display: inline-block;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
   }
 }
 
@@ -276,6 +360,13 @@
       height: 200px;
       right: 17px;
     }
+
+    @media (min-width: @desktop-width) {
+      top: 45px;
+      left: 36px;
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
@@ -288,6 +379,19 @@
     right: 41px;
     width: 200px;
     height: 211px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 36px;
+    left: 45px;
+    width: 100px;
+    height: 107px;
+  }
+}
+
+.example__split-containers {
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 
@@ -303,12 +407,28 @@
   .font-size(36px; 36px);
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
+    margin-top: 43px;
+    margin-bottom: 63px;
+    .font-size(60px; 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    margin-bottom: 0;
   }
 }
 
 .example__description {
   .font-size(14px; 18px);
+
+  @media (min-width: @tablet-width) {
+    .font-size(16px; 24px);
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 146px;
+  }
 }
 
 .example__range {
@@ -325,6 +445,7 @@
     .font-size(16px; 20px);
     text-transform: uppercase;
     cursor: pointer;
+    border-bottom: 1px dotted @color-grey-stick;
   }
 
   .example__range-controls {
@@ -339,8 +460,17 @@
     @media (min-width: @tablet-width) {
       width: 568px;
       margin-bottom: 67px;
+      z-index: 2;
     }
   }
+}
+
+.example__range:hover b {
+  border-bottom: 1px solid @color-grey-stick;
+}
+
+.example__range:active b {
+  border: none;
 }
 
 .toggle {
@@ -352,7 +482,16 @@
     border-radius: 50%;
     border: 13px solid #ffffff;
     left: 50%;
+    box-shadow: 0 1px 3px;
   }
+}
+
+.toggle:hover {
+  box-shadow: 0 2px 4px;
+}
+
+.toggle:active {
+  box-shadow: 0 0.5px 4px @color-green;
 }
 
 .scale {

@@ -8,9 +8,25 @@
   z-index: -2;
 }
 
+.page-header__logo-energy {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .page-header {
   @media (min-width: @tablet-width) {
     margin-bottom: 351px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 141px;
   }
 }
 
@@ -20,24 +36,17 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    width: 709px;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1300px;
+    /*width: 84%;*/
+    /*padding: 0 110px;*/
   }
 }
 
-.site-list__item a {
-  .font-family(Oswald);
-  .font-size(20px;20px);
-  text-transform: uppercase;
-}
-
 .page-header__menu-up {
-
-  background-color: #ffffff;
-
   @media (min-width: @tablet-width) {
     height: 100px;
     display: flex;
@@ -59,6 +68,40 @@
     position: static;
     align-items: center;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+body::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: @color-green-rgba;
+    background-image: url("../img/header-background-desktop1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+  }
+}
+
+body::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: @color-green-rgba;
+  }
 }
 
 .main-nav--nojs {
@@ -73,8 +116,8 @@
     margin-top: 12px;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 749px;
+  @media (min-width: @tablet-width) {
+    width: 479px;
   }
 }
 
@@ -84,9 +127,21 @@
   }
 }
 
+.site-list__item:hover {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
+
 .site-list__item--active {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @color-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @color-white;
   }
 }
 
@@ -161,12 +216,18 @@
   background-color: white;
   border-top: 1px solid#E6E6E6;
   text-align: center;
+  .font-family(Oswald);
+  .font-size(20px;20px);
 
   @media (min-width: @tablet-width) {
     display: inline;
     background-color: inherit;
     padding: 0;
     border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @color-white;
   }
 }
 
@@ -183,6 +244,27 @@
 
 .page-header__logo {
   padding: 22px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/logo-desktop-catenergy.png");
+    width: 179px;
+    height: 52px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
 }
 
 .feed-slogan__title {
@@ -197,7 +279,16 @@
     .font-size(60px; 60px);
     text-align: left;
     width: 414px;
-    margin-left: 78px;
+  }
+}
+
+.feed-slogan__container-title {
+  @media (min-width: @tablet-width) {
+    padding-left: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: px;
   }
 }
 
@@ -224,8 +315,32 @@
     color: #000000;
     .font-size(20px; 20px);
     display: inline;
-    margin-left: 78px;
   }
+}
+
+.feed-slogan__button-container {
+  background-color: @color-green;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 244px;
+    height: 54px;
+    text-align: center;
+    padding-top: 16px;
+    .font-family(Oswald);
+    .font-size(20px; 20px);
+    text-transform: uppercase;
+    margin-top: 49px;
+  }
+}
+
+.feed-slogan__button-container:hover {
+  background-color: @color-green-hober;
+}
+
+.feed-slogan__a:active {
+  opacity: 0.3;
 }
 
 .feed-slogan__img {
@@ -241,6 +356,13 @@
     bottom: 90px;
     z-index: -1;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    margin: 81px 0 0;
+    z-index: auto;
+  }
 }
 
 .feed-slogan__container {
@@ -249,6 +371,10 @@
 
   @media (min-width: @tablet-width) {
     background-color: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 
@@ -280,20 +406,3 @@
   }
 }
 
-.feed-slogan__button-container {
-  background-color: @color-green;
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 244px;
-    height: 54px;
-    margin-left: 78px;
-    text-align: center;
-    padding-top: 14px;
-    .font-family(Oswald);
-    .font-size(20px; 20px);
-    text-transform: uppercase;
-    margin-top: 49px;
-  }
-}
