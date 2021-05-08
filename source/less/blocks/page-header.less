@@ -16,7 +16,13 @@
 
 .page-header__logo-image {
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -78,6 +84,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img2x/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -129,12 +139,18 @@
   }
 }
 
-.site-list__item--active {
+.site-list__item--active-index {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @color-green;
   }
 
   @media (min-width: @desktop-width) {
+    border-bottom: 2px solid white;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: @tablet-width) {
     border-bottom: 2px solid @color-green;
   }
 }
@@ -242,19 +258,6 @@
 
 .page-header__logo {
   padding: 22px 0 24px;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../../img/logo-desktop-catenergy.png");
-    width: 179px;
-    height: 52px;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 202px;
-    height: 59px;
-  }
 }
 
 .page-header__logo:hover {
@@ -294,6 +297,10 @@
   background-image: url("../img/cat_background_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img2x/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
