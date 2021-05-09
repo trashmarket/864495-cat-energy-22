@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicon32.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="favicon16.ico" sizes="16x16" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="favicon32.ico" sizes="32x32" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -13,7 +18,10 @@
           <div class="page-header__menu-up">
             <div class="page-header__logo-wrapper">
               <a href="#" class="page-header__logo">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat's shop" width="33" height="37">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/big-logo-energy.svg">
+                  <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat's shop" width="33" height="37">
+                </picture>
               </a>
               <img src="img/logo-cat-energy.svg" alt="логотип сайта" width="101" height="18" class="page-header__logo-energy">
               <button class="page-header__toggle-main page-header__toggle-main--closed" type="button">
@@ -23,7 +31,7 @@
             <nav class="main-nav main-nav--nojs">
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                  <li class="site-list__item site-list__item--active">
+                  <li class="site-list__item site-list__item--active-index">
                     <a href="index.html">главная</a></li>
                   <li class="site-list__item">
                     <a href="catalog.html">Каталог продукции</a></li>
@@ -49,7 +57,11 @@
                     </a>
                   </div>
                 </div>
-                  <img src="img/index-cat.png" alt="" width="552" height="499" class="feed-slogan__img">
+                <picture>
+                  <source media="(min-width:1440px)" srcset="img/index-cat-desktop.png 1x, img/img2x/index-cat-desktop@2x.png 2x">
+                  <source media="(min-width:768px)" srcset="img/index-cat-tablet.png 1x, img/img2x/index-cat-tablet2x.png 2x">
+                  <img src="img/index-cat.png" srcset="img/img2x/index-cat2-mobile.png 2x" alt="feed-cat" width="552" height="499" class="feed-slogan__img">
+                </picture>
               </div>
             </div>
           <div class="feed-slogan__wrapper">
@@ -171,9 +183,9 @@
               </div>
               <div class="example__cats">
                 <div class="example__images-cats">
-                  <img src="img/mobile-big-cat.png" alt="cat-big" width="311" height="232" class="example__image-mobile">
-                  <img src="img/half-fat-cat.png" alt="cat-big" width="311" height="232" class="example__image-tablet-desktop-1">
-                  <img src="img/half-thin-cat.png" alt="cat-big" width="311" height="232" class="example__image-tablet-desktop-2">
+                  <img src="img/mobile-big-cat.png" srcset="img/img2x/cat-fat@2x.png 2x" alt="cat-big" width="311" height="232" class="example__image-mobile">
+                  <img src="img/half-fat-cat.png" srcset="fat-skin-desktop@2x.png 2x" alt="cat-big" width="311" height="232" class="example__image-tablet-desktop-1">
+                  <img src="img/half-thin-cat.png" srcset="img/img2x/cat-fat@2x.png 2x" alt="cat-big" width="311" height="232" class="example__image-tablet-desktop-2">
                 </div>
                 <div class="example__range">
                   <div class="example__range-controls">
