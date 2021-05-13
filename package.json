@@ -10,7 +10,11 @@
     "gulp-less": "4.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "package": "^1.0.1",
     "postcss": "8.2.8",
     "stylelint": "13.12.0",
     "stylelint-config-htmlacademy": "0.1.4"
@@ -20,7 +24,9 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "svg": "gulp sprite",
+    "webP": "gulp createWebp"
   },
   "browserslist": [
     "last 2 versions",

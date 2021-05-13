@@ -138,16 +138,17 @@
   }
 
   .social-list__item:hover svg {
-    stroke: @color-green;
+    fill: @color-green;
   }
 
   .social-list__item:active {
     opacity: 0.3;
   }
+}
 
-  .social-list__item--fc {
-    stroke: #666666;
-  }
+.social-list__item--fc svg {
+  width: 28px;
+  height: 33px;
 }
 
 .page-footer__social-media {
@@ -158,6 +159,11 @@
 
 .social-list__item--inst {
   margin-left: 8px;
+
+  svg {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .academy-logo {
@@ -201,4 +207,14 @@
 
 .academy-logo__svg-academy:active {
   opacity: 0.3;
+}
+
+.academy-logo svg {
+  width: 27px;
+  height: 34px;
+}
+
+.social-list__item--vk svg {
+  width: 30px;
+  height: 22px;
 }
