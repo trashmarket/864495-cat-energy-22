@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" href="favicon16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="favicon32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="favicon32.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="img/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicon32.svg" sizes="any" type="image/svg+xml">
     <link rel="icon" href="favicon16.ico" sizes="16x16" type="image/vnd.microsoft.icon">
     <link rel="icon" href="favicon32.ico" sizes="32x32" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -176,34 +176,6 @@
         </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script>
-      let additionally__submite = document.querySelector('.additionally__submite');
-      let inputs = document.querySelectorAll('input[type="text"]');
-
-      additionally__submite.onclick = function (event) {
-        event.preventDefault();
-        for (let i = 0; i < inputs.length; i++) {
-          if (inputs[i].value.length === 0) {
-            inputs[i].style.borderColor = "red";
-            if (inputs[i].className == "data__input data__input--email") {
-              document.querySelector('.' + inputs[i].className.split(' ')[1] + " + .email").style.stroke = "red";
-            }
-            if (inputs[i].className == "data__input data__input--phone") {
-              document.querySelector('.' + inputs[i].className.split(' ')[1] + " + .phone").style.stroke = "red";
-            }
-          } else {
-            inputs[i].style.borderColor = "black";
-            if (inputs[i].className == "data__input data__input--email") {
-              document.querySelector('.' + inputs[i].className.split(' ')[1] + " + .email").style.stroke = "black";
-            }
-            if (inputs[i].className == "data__input data__input--phone") {
-              document.querySelector('.' + inputs[i].className.split(' ')[1] + " + .phone").style.stroke = "black";
-            }
-          }
-
-        }
-      }
-    </script>
+    <script src="js/script_form.min.js"></script>
   </body>
 </html>

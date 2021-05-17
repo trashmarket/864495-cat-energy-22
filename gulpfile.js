@@ -28,6 +28,16 @@ const styles = () => {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream()) && gulp.src("source/css/normalize.css")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename("normalize.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -48,7 +58,15 @@ const scripts = () => {
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
+    .pipe(sync.stream()) && gulp.src("source/js/script_catalog.js")
+    .pipe(terser())
+    .pipe(rename("script_catalog.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream()) && gulp.src("source/js/script_form.js")
+    .pipe(terser())
+    .pipe(rename("script_form.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream())
 }
 
 exports.scripts = scripts;
@@ -79,7 +97,7 @@ exports.images = copyImages;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/img/webP"))
 }
 
 exports.createWebp = createWebp;
