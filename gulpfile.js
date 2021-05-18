@@ -28,16 +28,6 @@ const styles = () => {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream()) && gulp.src("source/css/normalize.css")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename("normalize.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
