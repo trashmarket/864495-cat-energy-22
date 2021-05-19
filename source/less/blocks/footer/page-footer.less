@@ -1,0 +1,61 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.page-footer {
+  background-color: @color-grey;
+}
+
+.page-footer__container {
+  div {
+    height: 62px;
+    border-bottom: 1px solid @color-grey-stick;
+
+    @media (min-width: @tablet-width) {
+      padding: 55px 0;
+    }
+  }
+
+  div:nth-last-child(1) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo-energy {
+  background-image: url("../img/logo-cat-energy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 132px;
+  }
+}
+
+.page-footer__logo-energy:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo-energy:active {
+  opacity: 0.3;
+}
+
+.page-footer__social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

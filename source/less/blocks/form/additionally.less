@@ -1,0 +1,136 @@
+.additionally__item {
+  padding-bottom: 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
+}
+
+.additionally__list {
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.additionally__title {
+  margin-top: -17px;
+  padding-left: 20px;
+  background-color: @color-white;
+  width: 180px;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+  }
+}
+
+.additionally {
+  border-top: 2px solid @color-green;
+  margin-top: 39px;
+}
+
+.additionally__span {
+  .font-family(Arial);
+  .font-size(16px; 16px);
+  width: 187px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 30%;
+  }
+}
+
+.additionally__submite {
+  display: block;
+  width: 100%;
+  background-color: @color-green;
+  border: none;
+  color: @color-white;
+  height: 40px;
+  margin-bottom: 21px;
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
+}
+
+.additionally__submite:hover {
+  background-color: @color-green-hober;
+}
+
+.additionally__submite:active {
+  color: rgba(248, 248, 248, 0.3);
+}
+
+.additionally__label {
+  padding-left: 45px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.additionally__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  border: 1px solid @color-grey-stick;
+  top: -5px;
+}
+
+.additionally__checkbox:checked + .additionally__label::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 6px;
+  background-image: url("../img/forms_icon/v.svg");
+  background-repeat: no-repeat;
+  top: 3px;
+}
+
+.additionally__label:active {
+  opacity: 0.3;
+}
+
+.additionally__submite-wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

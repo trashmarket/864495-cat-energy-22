@@ -1,8 +1,9 @@
-let header_toggle = document.querySelector('.page-header__toggle-main');
+    let header_toggle = document.querySelector('.page-header__toggle-main');
     let header_main = document.querySelector('.main-nav');
 
     header_main.classList.remove('main-nav--nojs');
     header_main.classList.add('main-nav--closed');
+    header_toggle.classList.remove('.page-header__toggle-main--nojs');
 
     header_toggle.onclick = function() {
       if (this.classList.contains('page-header__toggle-main--closed')) {

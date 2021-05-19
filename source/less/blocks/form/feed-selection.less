@@ -1,0 +1,155 @@
+.feed-selection__wrapper {
+  @media (min-width: @tablet-width) {
+    .font-size(20px; 30px);
+    padding: 0 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.feed-selection__wrapper * {
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
+}
+
+.feed-selection__object {
+  padding: 0 20px;
+  color: @special_dark-grey;
+
+  input {
+    color: @special_dark-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.feed-selection__slogan {
+  .font-size(14px; 18px);
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(20px; 30px);
+    margin-top: 54px;
+    margin-bottom: 66px;
+  }
+}
+
+.feed-selection {
+  border-top: 1px solid @color-grey-stick;
+  margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.feed-selection__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  align-items: center;
+
+  input {
+    height: 46px;
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.feed-selection__label:last-child {
+  margin-bottom: 27px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.feed-selection__input {
+  border: 1px solid @color-grey-stick;
+}
+
+.feed-selection__selector {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 20px 15px;
+  border-top: 1px solid @color-grey-stick;
+  border-bottom: 1px solid @color-grey-stick;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    border: 1px solid @color-grey-stick;
+    margin-top: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.feed-selection__title {
+  .font-size(36px; 36px);
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(60px; 60px);
+  }
+}
+
+.feed-selection__check-box + .feed-selection__selector-label {
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+.feed-selection__selector-item {
+  margin-bottom: 19px;
+}
+
+.feed-selection__check-box + .feed-selection__selector-label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid @color-grey-stick;
+  left: 0;
+  top: -4px;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    top: -1px;
+  }
+}
+
+.feed-selection__check-box:checked + .feed-selection__selector-label::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: @color-green;
+  top: 4px;
+  left: 8px;
+
+  @media (min-width: @tablet-width) {
+    top: 7px;
+    left: 8px;
+  }
+}
+
+.feed-selection__selector-label:active {
+  opacity: 0.3;
+}
