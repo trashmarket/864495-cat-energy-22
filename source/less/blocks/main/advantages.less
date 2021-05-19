@@ -1,0 +1,135 @@
+.advantages__item {
+  background-color: @color-grey;
+  padding: 0 20px 18px;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 53px 53px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.advantages__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantages__title {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 71px;
+  .font-size(24px; 37px);
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 23px;
+    .font-size(36px; 36px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 73px 130px;
+  }
+}
+
+.advantages__button {
+  .font-family(Oswald);
+  .font-size(16px; 16px);
+  text-transform: uppercase;
+  border-top: 1px solid#D9D9D9;
+  margin: 0;
+  padding-top: 15px;
+  position: relative;
+
+  a {
+    color: black;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+    border-top: none;
+    .font-size(20px; 30px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+  }
+}
+
+.advantages__button:active {
+  opacity: 0.3;
+}
+
+.advantages__button::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 32px;
+    height: 12px;
+    position: absolute;
+    top: 57px;
+    left: 124px;
+    background-image: url("../img/arrow.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 32px;
+  }
+}
+
+.advantages__description {
+  .font-size(16px; 18px);
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 377px;
+    .font-size(16px; 24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 457px;
+  }
+}
+
+.advantages__item--mass {
+  .advantages__img {
+    left: 10px;
+
+    @media (min-width: @tablet-width) {
+      left: auto;
+      width: 268px;
+      height: 200px;
+      right: 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 45px;
+      left: 36px;
+      width: 134px;
+      height: 100px;
+    }
+  }
+}
+
+.advantages__img {
+  position: absolute;
+  top: 17px;
+
+  @media (min-width: @tablet-width) {
+    top: 76px;
+    right: 41px;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 36px;
+    left: 45px;
+    width: 100px;
+    height: 107px;
+  }
+}

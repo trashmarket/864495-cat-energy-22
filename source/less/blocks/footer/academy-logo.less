@@ -1,0 +1,32 @@
+.academy-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.academy-logo__text {
+  .font-family(Arial);
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 23px;
+  }
+}
+
+.academy-logo__text:active {
+  opacity: 0.3;
+}
+
+.academy-logo svg:hover {
+  fill: @color-green;
+}
+
+.academy-logo__svg-academy:active {
+  opacity: 0.3;
+}
+
+.academy-logo svg {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
+}
