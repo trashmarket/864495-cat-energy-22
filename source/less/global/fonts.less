@@ -2,20 +2,20 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff"),
-    url("../fonts/oswaldmedium.woff2");
+  src: url("../fonts/oswaldmedium.woff2"),
+    url("../fonts/oswaldmedium.woff");
 }
 
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswaldregular.woff"),
-    url("../fonts/oswaldregular.woff2");
+  src: url("../fonts/oswaldregular.woff2"),
+    url("../fonts/oswaldregular.woff");
 }
 
 .font-family (@family; @font-style:normal; @font-weight:normal) {
-  font-family: @family;
+  font-family: @family, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
 }

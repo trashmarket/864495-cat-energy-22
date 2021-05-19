@@ -184,7 +184,7 @@
   }
 }
 
-.shop-li_name {
+.shop-li__name {
   .font-family(Oswald);
   margin-bottom: 18px;
   .font-size(16px; 20px);
@@ -197,6 +197,10 @@
     width: 140px;
     margin: 0 auto;
     border-bottom: none;
+  }
+
+  a {
+    color: black;
   }
 }
 
@@ -273,6 +277,10 @@
     background-color: @color-grey;
     color: @special_dark-grey;
 
+    a {
+      color: @special_dark-grey;
+    }
+
     @media (min-width: @desktop-width) {
       margin-top: 2px;
     }
@@ -286,7 +294,7 @@
     color: rgba(3, 3, 3, 0.3);
   }
 
-  .shop-li__name {
+  .shop-li__name-plus {
     @media (min-width: @tablet-width) {
       .font-size(20px; 22px);
     }
@@ -301,7 +309,7 @@
   }
 }
 
-.shop-li__name {
+.shop-li__name-plus {
   .font-family(Oswald);
   .font-size(16px; 21px);
   text-transform: uppercase;
@@ -357,9 +365,15 @@
 .additional-goods {
   border-top: 2px solid @color-green;
   margin-top: 41px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     margin-top: 91px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 86px;
   }
 }
 

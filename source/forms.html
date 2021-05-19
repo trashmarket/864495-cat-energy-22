@@ -54,21 +54,21 @@
           </div>
           <div class="feed-selection__wrapper">
             <div class="feed-selection__object">
-              <label for="barsik" class="feed-selection__label">ИМЯ:*<input type="text" class="feed-selection__input form__input_barsik" name="barsik" id="barsik" value="барсик"></label>
-              <label for="mass-number" class="feed-selection__label">Вес (кг):*<input type="text" class="feed-selection__input form__input_mass" name="mass-number" id="mass-number" value="7"></label>
-              <label for="age" class="feed-selection__label">Возраст (лет)<input type="text" class="feed-selection__input form__input_age" name="mass-number" id="mass-number" value="7"></label>
+              <label for="barsik" class="feed-selection__label">ИМЯ:*<input type="text" class="feed-selection__input form-input-barsik" name="barsik" id="barsik" value="барсик"></label>
+              <label for="mass-number" class="feed-selection__label">Вес (кг):*<input type="text" class="feed-selection__input form-input-mass" name="mass-number" id="mass-number" value="7"></label>
+              <label for="age" class="feed-selection__label">Возраст (лет)<input type="text" class="feed-selection__input form-input-age" name="mass-number" id="age" value="7"></label>
             </div>
             <ul class="feed-selection__selector">
               <li class="feed-selection__selector-item">
-                <input type="radio" name="feed" class="feed-selection__input feed-selection_check-box visually-hidden" id="slim-feed" checked>
+                <input type="radio" name="feed" class="feed-selection__input feed-selection__check-box visually-hidden" id="slim-feed" checked>
                 <label for="slim-feed" class="feed-selection__selector-label">похудение</label>
               </li>
               <li class="feed-selection__selector-item">
-                <input type="radio" name="feed" class="feed-selection__input feed-selection_check-box visually-hidden" id="mass-feed">
+                <input type="radio" name="feed" class="feed-selection__input feed-selection__check-box visually-hidden" id="mass-feed">
                 <label for="mass-feed" class="feed-selection__selector-label">Набор массы</label>
               </li>
               <li class="feed-selection__selector-item">
-                <input type="radio" name="feed" class="feed-selection__input feed-selection_check-box visually-hidden" id="advice">
+                <input type="radio" name="feed" class="feed-selection__input feed-selection__check-box visually-hidden" id="advice">
                 <label for="advice" class="feed-selection__selector-label">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
@@ -96,7 +96,7 @@
             <h2 class="comments__title">Комментарий</h2>
           </div>
           <div class="comments__wrapper">
-            <textarea class="comments__textarea" id="" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="comments__textarea"  cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="additionally">
@@ -118,8 +118,8 @@
             </li>
           </ul>
           <div class="additionally__submite-wrapper">
-            <input type="submit" class="additionally__submite" id="sub">
-            <span for="sub" class="additionally__span">
+            <input type="submit" class="additionally__submite" >
+            <span  class="additionally__span">
               * — Обязательные поля
             </span>
           </div>
@@ -150,27 +150,35 @@
           <div class="page-footer__social-media">
             <ul class="page-footer__list social-list">
               <li class="social-list__item social-list__item--vk">
-                <svg>
-                  <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
-                </svg>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social-list__item social-list__item--inst">
-                <svg>
-                  <use xlink:href="img/sprite.svg#icon_instagram"></use>
-                </svg>
-                </li>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#icon_instagram"></use>
+                  </svg>
+                </a>
+              </li>
               <li class="social-list__item social-list__item--fc">
-                <svg>
-                  <use xlink:href="img/sprite.svg#icon_facebook"></use>
-                </svg>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#icon_facebook"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__logo academy-logo">
             <span class="academy-logo__text">HTML Academy</span>
-            <svg>
-              <use xlink:href="img/sprite.svg#logo-heat-academy"></use>
-            </svg>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <svg>
+                <use xlink:href="img/sprite.svg#logo-heat-academy"></use>
+              </svg>
+            </a>
           </div>
         </section>
       </div>
