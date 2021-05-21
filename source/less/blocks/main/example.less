@@ -1,3 +1,17 @@
+.example__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+  }
+}
+
 .example {
   background-color: @color-grey;
   position: relative;
@@ -224,15 +238,15 @@
   }
 }
 
-.example__range:hover b {
+.example__range b:hover {
   border-bottom: 1px solid @color-grey-stick;
 }
 
-.example__range:active b {
+.example__range b:active {
   border: none;
 }
 
-.toggle {
+.example__range-toggle {
   @media (min-width: @tablet-width) {
     width: 34px;
     height: 34px;
@@ -245,15 +259,15 @@
   }
 }
 
-.toggle:hover {
+.example__range-toggle:hover {
   box-shadow: 0 2px 4px;
 }
 
-.toggle:active {
+.example__range-toggle:active {
   box-shadow: 0 0.5px 4px @color-green;
 }
 
-.scale {
+.example__range-scale {
   width: 84px;
   height: 14px;
   background-color: @color-white;
@@ -273,7 +287,7 @@
   }
 }
 
-.bar {
+.example__range-bar {
   width: 35px;
   height: 6px;
   background-color: @color-green;

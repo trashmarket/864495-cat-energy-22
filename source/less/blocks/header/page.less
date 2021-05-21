@@ -1,0 +1,33 @@
+.page__body-index::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: @color-green-rgba;
+    background-image: url("../img/header-background-desktop1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img2x/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.page__body-index::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: @color-green-rgba;
+  }
+}

@@ -1,13 +1,41 @@
+.comments__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0;
+  }
+}
+
+.comments__wrapper-title {
+  @media (min-width: @tablet-width) {
+    padding: 0 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1258px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 .comments__title {
   margin-top: -19px;
   background-color: @color-white;
   width: 170px;
   margin-bottom: 37px;
   padding-left: 20px;
+  .font-size(24px; 26px);
 
   @media (min-width: @tablet-width) {
     width: 220px;
     margin-bottom: 76px;
+    .font-size(36px; 36px);
   }
 
   @media (min-width: @desktop-width) {
@@ -21,6 +49,8 @@
   border: 1px solid @color-grey-stick;
   padding: 9px 15px;
   height: 150px;
+  .font-family(Oswald);
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     height: 174px;

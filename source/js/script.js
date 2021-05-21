@@ -3,8 +3,7 @@
 
     header_main.classList.remove('main-nav--nojs');
     header_main.classList.add('main-nav--closed');
-    header_toggle.classList.remove('.page-header__toggle-main--nojs');
-
+    header_toggle.classList.remove('page-header__toggle-main--nojs');
     header_toggle.onclick = function() {
       if (this.classList.contains('page-header__toggle-main--closed')) {
         this.classList.remove('page-header__toggle-main--closed');
@@ -18,7 +17,7 @@
     }
 
     let cat_event = document.querySelector('.example__range');
-    let scale = document.querySelector('.scale');
+    let scale = document.querySelector('.example__range-scale');
     let example__images_cats = document.querySelector('.example__images-cats img');
 
     cat_event.addEventListener('click', function(event) {
@@ -34,8 +33,8 @@
     });
 
     /* range*/
-    let toggle = document.querySelector('.toggle');
-    let bar = document.querySelector('.bar');
+    let toggle = document.querySelector('.example__range-toggle');
+    let bar = document.querySelector('.example__range-bar');
     let fatFullcat = document.querySelector('.example__image-tablet-desktop-1');
     let skinnyFullcat = document.querySelector('.example__image-tablet-desktop-2');
     let step = 0;
@@ -43,7 +42,7 @@
     cat_event.addEventListener("mousedown",  pointerDown);
 
     function pointerDown(event) {
-      if (event.target.closest(".toggle")) {
+      if (event.target.closest(".example__range-toggle")) {
         event.preventDefault();
         document.addEventListener('mousemove',  pointerMove);
       }

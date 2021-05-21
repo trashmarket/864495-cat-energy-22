@@ -1,0 +1,145 @@
+.page-header__backgroun-color {
+  background-color: @color-green-rgba;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.page-header__logo-energy {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+  }
+}
+
+.page-header__menu-up {
+  @media (min-width: @tablet-width) {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 155px;
+  }
+}
+
+.page-header__toggle-main {
+  position: relative;
+  width: 66px;
+  height: 54px;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__toggle-main--closed::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 23px;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+}
+
+.page-header__toggle-main--nojs::before {
+  width: 0;
+  height: 0;
+}
+
+.page-header__toggle-main--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 23px;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.page-header__logo {
+  padding: 22px 0 24px;
+}
+
+.page-header__logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
+.page-header__containe-background-image {
+  background-image: url("../img/cat_background_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/img2x/index-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+}
