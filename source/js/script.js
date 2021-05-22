@@ -21,12 +21,14 @@
     let example__images_cats = document.querySelector('.example__images-cats img');
 
     cat_event.addEventListener('click', function(event) {
-      if (event.target.closest('.right')) {
+      if (event.target.closest('.example__range-right')) {
         example__images_cats.src = "img/mobile-small-cat.png";
+        example__images_cats.srcset = "img/img2x/cat-skinny@2x.png 2x";
         scale.style.justifyContent = 'flex-end';
       }
-      if (event.target.closest('.left')) {
+      if (event.target.closest('.example__range-left')) {
         example__images_cats.src = "img/mobile-big-cat.png";
+        example__images_cats.srcset="img/img2x/cat-fat@2x.png 2x";
         scale.style.justifyContent = 'flex-start';
       }
       document.removeEventListener('mousemove', pointerMove);
@@ -100,11 +102,12 @@
     function pointerUp(event) {
 
       document.removeEventListener('mousemove', pointerMove);
-      let percent = (step / steps) * 100;
+      let percent = (step / steps) * 94;
 
       toggle.style.left = `${percent}%`;
 
       if (step === 0) {
+        toggle.style.left = `${-2}%`;
         bar.style.width = 50 + "%";
         bar.style.left = 0 + "%";
         fatFullcat.style.display = "block";
@@ -115,6 +118,7 @@
       }
 
       if (step === 1) {
+        toggle.style.left = `${46}%`;
         bar.style.width = 0;
         bar.style.left = 50 + "%";
         fatFullcat.style.display = "block";

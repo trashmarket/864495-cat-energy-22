@@ -23,6 +23,7 @@
     .number(@n) when(@n > 0) {
       .technology__item_@{n} {
         background-image: url("../img/numbers/@{n}.svg");
+        background-position-x: 123px;
       }
       .number(@n - 1);
     }
@@ -38,12 +39,12 @@
   background-position: 80%;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
+    width: 236px;
     height: 280px;
-    margin-right: 114px;
+    margin-right: 94px;
     margin-bottom: 37px;
     flex-direction: column;
-    padding: 70px 0;
+    padding: 36px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,6 +62,12 @@
   .font-size(14px; 18px);
   margin: 0;
   width: 198px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(16px; 24px);
+    width: 271px;
+    padding-bottom: 24px;
+  }
 }
 
 .technology__icon {
@@ -70,6 +77,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 
   svg {
     width: 29px;
@@ -85,6 +97,7 @@
 
 .technology__title {
   .font-size(36px; 40px);
+  margin-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     .font-size(60px; 60px);

@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   width: 125px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   .social-list__item {
@@ -13,13 +13,22 @@
   .social-list__item:active {
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+  }
 }
 
 .social-list__item--fc svg {
-  width: 28px;
-  height: 33px;
+  width: 22px;
+  height: 22px;
   fill: @color-grey;
   stroke: #666666;
+
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }
 
 .social-list__item--fc svg:hover {
@@ -30,9 +39,14 @@
   margin-left: 8px;
 
   svg {
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 16px;
     fill: #666666;
+
+    @media (min-width: @tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   svg:hover {
@@ -41,9 +55,14 @@
 }
 
 .social-list__item--vk svg {
-  width: 30px;
-  height: 22px;
+  width: 23px;
+  height: 16px;
   fill: #666666;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
 }
 
 .social-list__item--vk svg:hover {
