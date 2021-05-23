@@ -48,11 +48,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 105px;
+    margin-right: 69px;
+    width: 250px;
   }
 }
 
 .technology__item_4 {
+  .technology__description {
+    @media (min-width: @tablet-width) {
+      width: 271px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }
@@ -65,7 +72,7 @@
 
   @media (min-width: @tablet-width) {
     .font-size(16px; 24px);
-    width: 271px;
+    width: 238px;
     padding-bottom: 24px;
   }
 }
@@ -92,6 +99,10 @@
 .technology {
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid#E6E6E6;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
   }
 }
 
