@@ -26,6 +26,8 @@
     width: 245px;
     margin-top: 0;
     background-image: url("../img/gift-photo-mobile1.png");
+    margin-bottom: 62px;
+    height: 289px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-mobile@2x.png");
@@ -36,10 +38,14 @@
 .gift__img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 52px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
@@ -48,4 +54,6 @@
   margin: 0 auto;
   color: white;
   text-align: center;
+  margin-left: 58px;
+  .font-size(16px; 20px);
 }

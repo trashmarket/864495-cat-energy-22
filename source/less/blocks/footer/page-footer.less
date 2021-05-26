@@ -25,6 +25,10 @@
       padding: 68px 0;
       border: none;
     }
+
+    @media (min-width: @desktop-width) {
+      padding: 71px 0;
+    }
   }
 
   div:nth-last-child(1) {
@@ -51,6 +55,11 @@
   @media (min-width: @tablet-width) {
     width: 132px;
     background-position: center;
+    margin-top: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -4px;
   }
 }
 
@@ -66,4 +75,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 0;
+  }
 }

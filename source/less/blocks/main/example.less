@@ -1,5 +1,5 @@
 .example__wrapper {
-  padding: 17px 20px;
+  padding: 1px 20px;
   margin: 0 auto;
   padding-bottom: 0;
 
@@ -57,7 +57,6 @@
 .example__number {
   .font-family(Oswald);
   .font-size(24px; 24px);
-  text-transform: uppercase;
   display: inline-block;
   width: 124px;
   height: 64px;
@@ -65,6 +64,7 @@
   border: 1px solid#CDCDCD;
   padding-top: 12px;
   border-radius: 5px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     width: 162px;
@@ -97,25 +97,27 @@
 
 .example__number b {
   .font-family(Arial);
-  .font-size(10px; 12px);
+  .font-size(12px; 12px);
   display: flex;
-  width: 87px;
+  width: 80px;
   margin-left: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: @color-grey;
+  text-transform: none;
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
-    width: 123px;
+    width: 127px;
     margin-left: 17px;
     justify-content: center;
-    margin-top: 15px;
-    .font-size(11px; 12px);
+    margin-top: 10px;
+    .font-size(14px; 14px);
   }
 
   @media (min-width: @desktop-width) {
     background-color: @color-grey;
-    margin-left: 17px;
+    margin-left: 16px;
+    margin-top: 11px;
   }
 }
 
@@ -130,11 +132,11 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    .font-size(20px; 25px);
+    .font-size(20px; 28px);
     width: 184px;
     margin: 0;
     text-align: right;
-    padding-top: 12px;
+    padding-top: 6px;
   }
 
   @media (min-width: @desktop-width) {
@@ -160,7 +162,7 @@
   margin-top: -4px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 73px;
+    margin-top: 66px;
   }
 
   @media (min-width: @desktop-width) {
@@ -202,10 +204,11 @@
 
 .example__title {
   .font-size(36px; 36px);
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     margin-top: 44px;
-    margin-bottom: 62px;
+    margin-bottom: 64px;
     .font-size(60px; 60px);
   }
 
@@ -228,10 +231,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 145px;
+    margin-top: 146px;
     width: 437px;
-    margin-bottom: 69px;
-    margin-left: 9px;
+    margin-bottom: 66px;
+    margin-left: 10px;
   }
 }
 
@@ -239,13 +242,15 @@
   display: flex;
   justify-content: center;
   margin-top: 28px;
+  margin-left: 4px;
 
   @media (min-width: @tablet-width) {
     margin-top: -63px;
+    margin-left: -2px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 172px;
+    margin-left: 167px;
     margin-top: -46px;
   }
 

@@ -17,6 +17,10 @@
   @media (min-width: @tablet-width) {
     margin-left: 15px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -8px;
+  }
 }
 
 .social-list__item--fc svg {
@@ -36,7 +40,13 @@
 }
 
 .social-list__item--inst {
-  margin-left: 8px;
+  margin-left: 7px;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 13px;
+    margin-top: 4px;
+  }
 
   svg {
     width: 16px;
@@ -58,10 +68,12 @@
   width: 23px;
   height: 16px;
   fill: #666666;
+  margin-left: -5px;
 
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
+    margin-left: 1px;
   }
 }
 

@@ -2,14 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  a {
+    margin-top: -9px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 3px;
+    }
+  }
 }
 
 .academy-logo__text {
   .font-family(Arial);
   color: #444444;
+  margin-top: -13px;
 
   @media (min-width: @tablet-width) {
     padding-right: 23px;
+    margin-top: -4px;
   }
 }
 

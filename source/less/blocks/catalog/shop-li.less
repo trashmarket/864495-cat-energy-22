@@ -10,6 +10,10 @@
     padding-bottom: 9px;
     padding-top: 10px;
   }
+
+  span {
+    margin-right: 2px;
+  }
 }
 
 .shop-li__wraper {
@@ -23,31 +27,76 @@
   }
 }
 
-.shop-li:nth-child(odd) .shop-li__img {
-  width: 68px;
-  height: 78px;
-  margin-top: 27px;
-  margin-left: 12px;
+.shop-li:nth-child(odd) {
+  .shop-li__img {
+    width: 68px;
+    height: 86px;
+    margin-top: 9px;
+    margin-left: 36px;
 
-  @media (min-width: @tablet-width) {
-    width: 161px;
-    height: 172px;
-    margin: 0;
-    margin-top: -100px;
-    margin-bottom: 40px;
+    @media (min-width: @tablet-width) {
+      width: 161px;
+      height: 172px;
+      margin: 0;
+      margin-top: -100px;
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: -90px 0 19px;
+    }
+  }
+
+  .img--resize {
+    height: 78px;
+    margin-top: 21px;
+    margin-left: 36px;
+
+    @media (min-width: @tablet-width) {
+      width: 161px;
+      height: 172px;
+      margin: -100px 0 22px;
+    }
+  }
+
+  .shop-li__name {
+    @media (min-width: @desktop-width) {
+      padding-top: 17px;
+    }
+  }
+
+  .shop-li__list {
+    margin-bottom: 22px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 28px;
+    }
   }
 }
 
-.shop-li:nth-child(even) .shop-li__img {
-  width: 84px;
-  height: 100px;
-  margin-top: 0;
+.shop-li:nth-child(even) {
+  .shop-li__img {
+    width: 84px;
+    height: 100px;
+    margin-top: 3px;
+    margin-left: 28px;
 
-  @media (min-width: @tablet-width) {
-    width: 168px;
-    height: 200px;
-    margin-top: -127px;
-    margin-bottom: 40px;
+    @media (min-width: @tablet-width) {
+      width: 168px;
+      height: 200px;
+      margin-top: -127px;
+      margin-bottom: 17px;
+      margin-left: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: -120px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .shop-li__list {
+    margin-bottom: 20px;
   }
 }
 
@@ -83,9 +132,8 @@
 .shop-li__list {
   float: right;
   margin-top: -3px;
-  margin-right: 10px;
+  margin-right: -2px;
   width: 142px;
-  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -97,7 +145,7 @@
 
 .shop-li__name {
   .font-family(Oswald);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   .font-size(16px; 20px);
   text-transform: uppercase;
   width: 100px;

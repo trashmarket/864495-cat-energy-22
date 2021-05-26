@@ -34,7 +34,7 @@
 .technology__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: 80%;
 
@@ -44,7 +44,7 @@
     margin-right: 94px;
     margin-bottom: 37px;
     flex-direction: column;
-    padding: 36px 0;
+    padding: 33px 0 39px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +53,36 @@
   }
 }
 
+.technology__item_1 {
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+  }
+}
+
+.technology__item_2 {
+  @media (min-width: @tablet-width) {
+    padding: 33px 5px 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 0 39px;
+  }
+}
+
+.technology__item_3 {
+  @media (min-width: @desktop-width) {
+    margin-left: 2px;
+  }
+}
+
 .technology__item_4 {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 5px 39px;
+    margin-bottom: 37px;
+  }
+
   .technology__description {
     @media (min-width: @tablet-width) {
       width: 271px;
@@ -61,7 +90,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 0;
+    margin-right: 6px;
+    padding: 33px 1px 39px;
   }
 }
 
@@ -69,6 +99,7 @@
   .font-size(14px; 18px);
   margin: 0;
   width: 198px;
+  margin-right: 2px;
 
   @media (min-width: @tablet-width) {
     .font-size(16px; 24px);
@@ -112,5 +143,10 @@
 
   @media (min-width: @tablet-width) {
     .font-size(60px; 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 9px;
+    margin-bottom: 37px;
   }
 }

@@ -53,8 +53,10 @@
 }
 
 .advantages__title--slim {
+  margin-bottom: 26px;
+
   @media (min-width: @tablet-width) {
-    margin: 0 0 24px;
+    margin: 0 0 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,6 +65,12 @@
 }
 
 .advantages__title--mass {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 27px;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0 0 73px 150px;
   }
@@ -86,9 +94,18 @@
     border-top: none;
     .font-size(20px; 30px);
   }
+}
+
+.advantages__button--slim {
+  padding-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 28px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding-top: 23px;
+    padding-top: 4px;
+    margin-left: 8px;
   }
 }
 
@@ -110,13 +127,28 @@
     width: 32px;
     height: 12px;
     position: absolute;
-    top: 57px;
-    left: 124px;
-    background-image: url("../img/arrow.svg");
+    top: 37px;
+    left: 132px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 32px;
+    top: 15px;
+    left: 137px;
+  }
+}
+
+.advantages__button--mass {
+  padding-top: 20px;
+  margin-left: -1px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 29px;
+    margin-left: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 4px;
+    margin-left: -10px;
   }
 }
 
@@ -154,25 +186,41 @@
       height: 100px;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+    padding: 79px 53px 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 55px 53px 53px;
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description--mass {
+  margin-bottom: 22px;
+
   @media (min-width: @tablet-width) {
     width: 344px;
   }
 
   @media (min-width: @desktop-width) {
     width: 469px;
+    margin-left: -11px;
   }
 }
 
 .advantages__description--slimming {
+  margin-bottom: 23px;
+
   @media (min-width: @tablet-width) {
     width: 375px;
   }
 
   @media (min-width: @desktop-width) {
     width: 480px;
+    margin-left: 9px;
   }
 }
 
