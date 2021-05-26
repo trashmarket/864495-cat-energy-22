@@ -1,0 +1,27 @@
+.main-nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.main-nav--nojs {
+  position: static;
+}
+
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}

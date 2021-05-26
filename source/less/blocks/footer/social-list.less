@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   width: 125px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   .social-list__item {
@@ -13,32 +13,50 @@
   .social-list__item:active {
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -8px;
+  }
 }
 
 .social-list__item--fc svg {
-  width: 28px;
-  height: 33px;
+  width: 22px;
+  height: 22px;
   fill: @color-grey;
   stroke: #666666;
+
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }
 
 .social-list__item--fc svg:hover {
   stroke: @color-green;
 }
 
-.page-footer__social-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .social-list__item--inst {
-  margin-left: 8px;
+  margin-left: 7px;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 13px;
+    margin-top: 4px;
+  }
 
   svg {
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 16px;
     fill: #666666;
+
+    @media (min-width: @tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   svg:hover {
@@ -47,9 +65,16 @@
 }
 
 .social-list__item--vk svg {
-  width: 30px;
-  height: 22px;
+  width: 23px;
+  height: 16px;
   fill: #666666;
+  margin-left: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+    margin-left: 1px;
+  }
 }
 
 .social-list__item--vk svg:hover {

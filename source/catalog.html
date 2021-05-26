@@ -15,7 +15,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__menu-up">
-          <div class="page-header__logo-wrapper">
+          <div class="page-header__logo-wrapper page-header__logo-wrapper--pixel">
             <a href="#" class="page-header__logo">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/big-logo-energy.svg">
@@ -23,7 +23,7 @@
               </picture>
             </a>
             <img src="img/logo-cat-energy.svg" alt="логотип сайта" width="101" height="18" class="page-header__logo-energy">
-            <button class="page-header__toggle-main page-header__toggle-main--closed" type="button">
+            <button class="page-header__toggle-main page-header__toggle-main--closed page-header__toggle-main--nojs" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
@@ -128,7 +128,7 @@
 
                     <source media="(min-width: 1440px)" srcset="img/basket/desktop/green-little.png 1x, img/basket/desktop/green-little@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/basket/tablet/green-little-tablet.png 1x, img/basket/tablet/green-little-tablet@2x.png 2x">
-                    <img src="img/basket/basket-green-little-mobile.png" srcset="img/basket/basket-green-little-mobile@2x.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+                    <img src="img/basket/basket-green-little-mobile.png" srcset="img/basket/basket-green-little-mobile@2x.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img img--resize">
                   </picture>
                 </a>
                 <ul class="shop-li__list">
@@ -200,7 +200,7 @@
 
                     <source media="(min-width: 1440px)" srcset="img/basket/desktop/blue-little.png 1x, img/basket/desktop/blue-little@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/basket/tablet/blue-little-tablet.png 1x, img/basket/tablet/blue-little-tablet@2x.png 2x">
-                    <img src="img/basket/basket-blue-little-mobile.png" srcset="img/basket/basket-blue-little-mobile@2x.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+                    <img src="img/basket/basket-blue-little-mobile.png" srcset="img/basket/basket-blue-little-mobile@2x.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img img--resize">
                   </picture>
                 </a>
                 <ul class="shop-li__list">
@@ -272,7 +272,7 @@
 
                     <source media="(min-width: 1440px)" srcset="img/basket/desktop/purple-little.png 1x, img/basket/desktop/purple-little@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/basket/tablet/purple-little-tablet.png 1x, img/basket/tablet/purple-little-tablet@2x.png 2x">
-                    <img src="img/basket/basket-purple-little-mobile.png" srcset="img/basket/basket-purple-little-mobile@2x.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img">
+                    <img src="img/basket/basket-purple-little-mobile.png" srcset="img/basket/basket-purple-little-mobile@2x.png" alt="питательная смесь для кота" width="172" height="196" class="shop-li__img img--resize">
                   </picture>
                 </a>
                 <ul class="shop-li__list">
@@ -298,20 +298,20 @@
                 </button>
               </div>
             </li>
-            <li class="shop__item shop__item_active shop-li">
-              <div class="shop-li__wraper">
+            <li class="shop__item shop-li-active">
+              <div class="shop-li-active__wraper">
                 <img src="img/plus.svg" alt="добавить" width="30" height="30" class="shop-li__plus">
-                <b class="shop-li__name-plus">Показать еще
+                <b class="shop-li-active__name-plus">Показать еще
                   100500 товаров</b>
-                <p class="shop-li__p">На самом деле вкусов
+                <p class="shop-li-active__p">На самом деле вкусов
                     гораздо больше!
                 </p>
-                <button class="shop-li__button" type="button">
+                <button class="shop-li-active__button" type="button">
                   <a href="#">
                     показать все
                   </a>
                 </button>
-            </div>
+              </div>
             </li>
           </ul>
       </section>
@@ -350,11 +350,11 @@
               <button class="goods-item__button" type="button">заказать</button>
             </li>
           </ul>
-          <div class="additional-goods__arct gift">
+          <div class="additional-goods__gift gift">
             <img src="img/icon_gift.svg" alt="иконка подарок" width="78" height="80" class="gift__img">
             <p class="gift__p">
               Закажите все
-              и получите чехол для
+              и&nbspполучите чехол для
               кота в подарок!
             </p>
           </div>

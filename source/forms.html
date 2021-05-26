@@ -21,7 +21,7 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat's shop" width="33" height="37">
             </picture>
             <img src="img/logo-cat-energy.svg" alt="логотип сайта" width="101" height="18" class="page-header__logo-energy">
-            <button class="page-header__toggle-main page-header__toggle-main--closed" type="button">
+            <button class="page-header__toggle-main page-header__toggle-main--closed page-header__toggle-main--nojs" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
@@ -43,7 +43,7 @@
     <main class="page__main">
       <form class="program-feed">
         <fieldset class="program-feed__selection feed-selection">
-          <div class="program-feed__wraper">
+          <div class="feed-selection__wraper">
             <h1 class="feed-selection__title">
               Подбор программы
             </h1>
@@ -54,9 +54,9 @@
           </div>
           <div class="feed-selection__wrapper">
             <div class="feed-selection__object">
-              <label for="barsik" class="feed-selection__label">ИМЯ:*<input type="text" class="feed-selection__input form-input-barsik" name="barsik" id="barsik" value="барсик"></label>
-              <label for="mass-number" class="feed-selection__label">Вес (кг):*<input type="text" class="feed-selection__input form-input-mass" name="mass-number" id="mass-number" value="7"></label>
-              <label for="age" class="feed-selection__label">Возраст (лет)<input type="text" class="feed-selection__input form-input-age" name="mass-number" id="age" value="7"></label>
+              <label for="barsik" class="feed-selection__label">ИМЯ:*<input type="text" class="feed-selection__input feed-selection__input-barsik" name="barsik" id="barsik" value="барсик"></label>
+              <label for="mass-number" class="feed-selection__label">Вес (кг):*<input type="text" class="feed-selection__input feed-selection__input-mass" name="mass-number" id="mass-number" value="7"></label>
+              <label for="age" class="feed-selection__label">Возраст (лет)<input type="text" class="feed-selection__input feed-selection__input-age" name="mass-number" id="age" value="7"></label>
             </div>
             <ul class="feed-selection__selector">
               <li class="feed-selection__selector-item">
@@ -80,12 +80,12 @@
           </div>
           <div class="data__set">
             <label for="email" class="data__label">E-mail:*<input type="text" id="email" name="email" class="data__input data__input--email" value="kuklachev@gmail.com" required>
-              <svg class="email">
+              <svg class="data__email">
                 <use xlink:href="img/sprite.svg#email"></use>
               </svg>
             </label>
             <label for="phone-number" class="data__label">Телефон:*<input type="text" id="phone-number" name="phone-number" class="data__input data__input--phone" value="8 (960) 900-60-90">
-              <svg class="phone">
+              <svg class="data__phone">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
             </label>

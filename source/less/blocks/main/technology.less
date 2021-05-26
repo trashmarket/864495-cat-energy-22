@@ -1,3 +1,17 @@
+.technology__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1300px;
+  }
+}
+
 .technology__list {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -9,6 +23,7 @@
     .number(@n) when(@n > 0) {
       .technology__item_@{n} {
         background-image: url("../img/numbers/@{n}.svg");
+        background-position-x: 123px;
       }
       .number(@n - 1);
     }
@@ -19,27 +34,64 @@
 .technology__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   background-repeat: no-repeat;
   background-position: 80%;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
+    width: 236px;
     height: 280px;
-    margin-right: 114px;
+    margin-right: 94px;
     margin-bottom: 37px;
     flex-direction: column;
-    padding: 70px 0;
+    padding: 33px 0 39px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 105px;
+    margin-right: 69px;
+    width: 250px;
+  }
+}
+
+.technology__item_1 {
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+  }
+}
+
+.technology__item_2 {
+  @media (min-width: @tablet-width) {
+    padding: 33px 5px 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 0 39px;
+  }
+}
+
+.technology__item_3 {
+  @media (min-width: @desktop-width) {
+    margin-left: 2px;
   }
 }
 
 .technology__item_4 {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 5px 39px;
+    margin-bottom: 37px;
+  }
+
+  .technology__description {
+    @media (min-width: @tablet-width) {
+      width: 271px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
-    margin-right: 0;
+    margin-right: 6px;
+    padding: 33px 1px 39px;
   }
 }
 
@@ -47,6 +99,13 @@
   .font-size(14px; 18px);
   margin: 0;
   width: 198px;
+  margin-right: 2px;
+
+  @media (min-width: @tablet-width) {
+    .font-size(16px; 24px);
+    width: 238px;
+    padding-bottom: 24px;
+  }
 }
 
 .technology__icon {
@@ -56,6 +115,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 
   svg {
     width: 29px;
@@ -67,12 +131,22 @@
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid#E6E6E6;
   }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .technology__title {
   .font-size(36px; 40px);
+  margin-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     .font-size(60px; 60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 9px;
+    margin-bottom: 37px;
   }
 }

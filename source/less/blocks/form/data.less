@@ -3,13 +3,27 @@
   margin-top: -20px;
   background-color: @color-white;
   padding-left: 20px;
+  .font-size(24px; 26px);
 
   @media (min-width: @tablet-width) {
     width: 551px;
+    .font-size(36px; 36px);
   }
 
   @media (min-width: @desktop-width) {
     width: 40%;
+  }
+}
+
+.data__wrapper-title {
+  @media (min-width: @tablet-width) {
+    padding: 0 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1258px;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -29,6 +43,8 @@
   margin-top: 35px;
   margin-bottom: 23px;
   color: @special_dark-grey;
+  .font-family(Oswald);
+  text-transform: uppercase;
 
   input {
     color: @special_dark-grey;
@@ -78,29 +94,29 @@
   border: 1px solid @color-grey-stick;
 }
 
-.data__label:first-child .email {
+.data__label:first-child .data__email {
   width: 20px;
   height: 14px;
   fill: white;
   stroke: black;
 }
 
-.data__label:first-child:hover .email {
+.data__label:first-child:hover .data__email {
   stroke: @color-green;
 }
 
-.data__label:last-child:hover .phone {
+.data__label:last-child:hover .data__phone {
   fill: @color-green;
 }
 
-.email {
+.data__email {
   position: absolute;
   right: 10px;
   top: 16px;
   background-repeat: no-repeat;
 }
 
-.phone {
+.data__phone {
   position: absolute;
   right: 10px;
   top: 14px;

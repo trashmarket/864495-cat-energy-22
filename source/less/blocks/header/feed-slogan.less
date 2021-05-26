@@ -1,0 +1,154 @@
+.feed-slogan__title {
+  .font-size(36px; 36px);
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+  padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    .font-size(60px; 60px);
+    text-align: left;
+    width: 414px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+    width: 454px;
+  }
+}
+
+.feed-slogan__container-title {
+  @media (min-width: @tablet-width) {
+    padding-left: 86px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 91px;
+  }
+}
+
+.feed-slogan__p {
+  .font-family(Oswald);
+  .font-size(14px; 14px);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    .font-size(20px; 20px);
+    display: inline;
+    padding-left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.feed-slogan__button-container {
+  background-color: @color-green;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 244px;
+    height: 54px;
+    text-align: center;
+    padding-top: 16px;
+    .font-family(Oswald);
+    .font-size(20px; 20px);
+    text-transform: uppercase;
+    margin-top: 49px;
+    margin-left: -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 48px;
+    margin-left: -1px;
+  }
+}
+
+.feed-slogan__button-container:hover {
+  background-color: @color-green-hober;
+}
+
+.feed-slogan__a:active {
+  opacity: 0.3;
+}
+
+.feed-slogan__img {
+  width: 295px;
+  height: 270px;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: relative;
+    bottom: 90px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    z-index: auto;
+    margin: 74px 0 0 -86px;
+  }
+}
+
+.feed-slogan__container {
+  background-color: @color-green-rgba;
+  height: 302px;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.feed-slogan__button {
+  display: block;
+  background-color: @color-green;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 139px 0 0;
+  align-items: center;
+  justify-content: center;
+  .font-family(Oswald);
+  .font-size(14px; 18px);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.feed-slogan {
+  height: 480px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 351px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 141px;
+  }
+}
+
+.feed-slogan__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

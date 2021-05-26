@@ -3,8 +3,7 @@
 
     header_main.classList.remove('main-nav--nojs');
     header_main.classList.add('main-nav--closed');
-    header_toggle.classList.remove('.page-header__toggle-main--nojs');
-
+    header_toggle.classList.remove('page-header__toggle-main--nojs');
     header_toggle.onclick = function() {
       if (this.classList.contains('page-header__toggle-main--closed')) {
         this.classList.remove('page-header__toggle-main--closed');
@@ -18,24 +17,26 @@
     }
 
     let cat_event = document.querySelector('.example__range');
-    let scale = document.querySelector('.scale');
+    let scale = document.querySelector('.example__range-scale');
     let example__images_cats = document.querySelector('.example__images-cats img');
 
     cat_event.addEventListener('click', function(event) {
-      if (event.target.closest('.right')) {
+      if (event.target.closest('.example__range-right')) {
         example__images_cats.src = "img/mobile-small-cat.png";
+        example__images_cats.srcset = "img/img2x/cat-skinny@2x.png 2x";
         scale.style.justifyContent = 'flex-end';
       }
-      if (event.target.closest('.left')) {
+      if (event.target.closest('.example__range-left')) {
         example__images_cats.src = "img/mobile-big-cat.png";
+        example__images_cats.srcset="img/img2x/cat-fat@2x.png 2x";
         scale.style.justifyContent = 'flex-start';
       }
       document.removeEventListener('mousemove', pointerMove);
     });
 
     /* range*/
-    let toggle = document.querySelector('.toggle');
-    let bar = document.querySelector('.bar');
+    let toggle = document.querySelector('.example__range-toggle');
+    let bar = document.querySelector('.example__range-bar');
     let fatFullcat = document.querySelector('.example__image-tablet-desktop-1');
     let skinnyFullcat = document.querySelector('.example__image-tablet-desktop-2');
     let step = 0;
@@ -43,7 +44,7 @@
     cat_event.addEventListener("mousedown",  pointerDown);
 
     function pointerDown(event) {
-      if (event.target.closest(".toggle")) {
+      if (event.target.closest(".example__range-toggle")) {
         event.preventDefault();
         document.addEventListener('mousemove',  pointerMove);
       }
@@ -101,11 +102,12 @@
     function pointerUp(event) {
 
       document.removeEventListener('mousemove', pointerMove);
-      let percent = (step / steps) * 100;
+      let percent = (step / steps) * 94;
 
       toggle.style.left = `${percent}%`;
 
       if (step === 0) {
+        toggle.style.left = `${-2}%`;
         bar.style.width = 50 + "%";
         bar.style.left = 0 + "%";
         fatFullcat.style.display = "block";
@@ -116,6 +118,7 @@
       }
 
       if (step === 1) {
+        toggle.style.left = `${46}%`;
         bar.style.width = 0;
         bar.style.left = 50 + "%";
         fatFullcat.style.display = "block";

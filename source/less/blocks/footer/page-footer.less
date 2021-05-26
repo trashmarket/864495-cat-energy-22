@@ -8,6 +8,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    padding: 0;
   }
 }
 
@@ -17,11 +18,16 @@
 
 .page-footer__container {
   div {
-    height: 62px;
+    height: 92px;
     border-bottom: 1px solid @color-grey-stick;
 
     @media (min-width: @tablet-width) {
-      padding: 55px 0;
+      padding: 68px 0;
+      border: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 71px 0;
     }
   }
 
@@ -29,20 +35,31 @@
     border-bottom: none;
   }
 
+  div:nth-child(2) {
+    height: 63px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    height: 150px;
   }
 }
 
 .page-footer__logo-energy {
   background-image: url("../img/logo-cat-energy.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 76px 37px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 132px;
+    background-position: center;
+    margin-top: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -4px;
   }
 }
 
@@ -58,4 +75,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 0;
+  }
 }
